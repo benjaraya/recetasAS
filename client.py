@@ -22,7 +22,8 @@ try:
 
         # Receive the server's response
         response = sock.recv(1024).decode()
-        print('Received: {}'.format(response))
+        mensaje = 'Received: {}'.format(response)
+        print(mensaje[22:])
 
 
 finally:
